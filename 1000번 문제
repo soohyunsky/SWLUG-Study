@@ -1,0 +1,16 @@
+// 두 정수 A와 B를 입력받은 다음, A+B를 출력하는 프로그램을 작성하시오.
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int A,B; // 두 정수 A,B 선언
+    cin >> A >> B; // 키보드로부터 A, B 입력받기
+    
+    if((A > 0)&&(A < 10)&&(B > 0)&&(B < 10)) 
+        cout << A + B; // 0<A<10, 0<B<10 의 조건을 동시에 만족하면 A+B의 값을 출력
+    else
+        cout << "A,B가 입력 조건을 충족하지 않았습니다."; // 조건을 충족하지 못하면 다음 문장을 출력
+        
+    return 0;
+}

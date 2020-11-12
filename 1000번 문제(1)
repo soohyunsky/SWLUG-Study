@@ -1,0 +1,4 @@
+// 두 정수 A와 B를 입력받은 다음, A+B를 출력하는 프로그램을 작성하시오.
+
+a, b = map(int, input().split()) // map은 리스트의 요소를 int로 변환, split은 리스트로 받은 문자열을 쪼개는 함수
+print(a+b)

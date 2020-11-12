@@ -1,0 +1,16 @@
+// 두 정수 A와 B를 입력받은 다음, A-B를 출력하는 프로그램을 작성하시오.
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int A,B; // 정수 A,B선언
+    cin >> A >> B; // 키보드로 부터 A,B 입력받기
+    
+    if((A > 0)&&(A < 10)&&(B > 0)&&(B < 10))
+        cout << A - B;// A > 0과 B < 10 의 조건을 만족하면 A - B 의 값을 출력하기
+    else
+        cout << "A,B가 입력 조건을 충족하지 않았습니다."; // 만족하지 않으면 다음과 같은 문장 출력하기
+    
+    return 0;
+}
